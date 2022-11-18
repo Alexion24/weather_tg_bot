@@ -16,7 +16,7 @@ def get_text_messages(message):
     text: str = message.text
     if text.startswith('/weather') and text.rstrip() != '/weather':
         get_weather(message)
-    else:
+    elif text.startswith('/weather'):
         bot.send_message(message.chat.id, 'Напиши: /weather Пермь')
 
 
