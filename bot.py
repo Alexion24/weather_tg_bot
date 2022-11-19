@@ -21,7 +21,7 @@ def get_text_messages(message):
 
 
 def get_location(lat, lon):
-    url = f"https://yandex.ru/pogoda/maps/nowcast&lat={lat}&lon={lon}&via=hnav&le_Lightning=1"
+    url = f"https://yandex.ru/pogoda/maps/nowcast?via=hnav&le_Lightning=1&ll={lon}_{lat}&z=9&lat={lat}&lon={lon}"
     return url
 
 
